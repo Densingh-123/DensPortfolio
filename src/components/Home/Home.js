@@ -35,7 +35,7 @@
                   src={homeLogo}
                   alt="home pic"
                   className="img-fluids"
-                  style={{ maxHeight: "560px", width: "240", objectFit: "cover" }}
+                  style={{ maxHeight: "540px", width: "240", objectFit: "cover" }}
                 />
               </Col>
             </Row>
