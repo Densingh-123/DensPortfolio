@@ -11,7 +11,6 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 function ResumeNew() {
   const [width, setWidth] = useState(window.innerWidth);
   const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -39,7 +38,7 @@ function ResumeNew() {
           <Button
             variant="primary"
             href={pdf}
-          target="_blank"
+            target="_blank"
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
@@ -47,7 +46,7 @@ function ResumeNew() {
           </Button>
         </Row>
 
-        <Row className="resume">
+        <div className="resume" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
           {error ? (
             <p>Error loading PDF: {error}</p>
           ) : (
@@ -55,12 +54,18 @@ function ResumeNew() {
               file={pdf}
               onLoadSuccess={onDocumentLoadSuccess}
               onLoadError={onDocumentLoadError}
-              className="d-flex justify-content-center"
             >
-              <Page pageNumber={pageNumber} scale={width > 786 ? 1.7 : 0.6} />
+              {Array.from(new Array(numPages), (el, index) => (
+                <div key={`page_${index + 1}`} style={{ marginBottom: "20px" }}>
+                  <Page
+                    pageNumber={index + 1}
+                    scale={width > 786 ? 1.7 : 0.6}
+                  />
+                </div>
+              ))}
             </Document>
           )}
-        </Row>
+        </div>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button

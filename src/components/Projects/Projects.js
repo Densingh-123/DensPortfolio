@@ -46,7 +46,7 @@ imgPath='/2.png'
   title="Shopsy"
   description="An intuitive Online Shopping App that offers a seamless shopping experience. Users can explore a wide range of products, apply filters for easy search, add items to their cart or wishlist, and enjoy secure payment options. The app also includes features like order tracking, product reviews, and personalized recommendations to enhance the user experience."
   ghLink="https://github.com/Densingh-123/OnlineShopping_Application.git"
-  demoLink="https://online-shopping-application-gamma.vercel.app/cart"
+  demoLink="https://online-shopping-application-gamma.vercel.app/"
 />
 
           </Col>
@@ -95,7 +95,7 @@ imgPath='/2.png'
   />
 </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
           <ProjectCard
   imgPath='/6.png'
   isBlog={false}
@@ -103,9 +103,9 @@ imgPath='/2.png'
   description="A versatile E-commerce platform modeled after Flipkart, providing users with a seamless shopping experience. This application offers a wide range of products across multiple categories such as electronics, fashion, home appliances, and more. Key features include advanced search and filters, personalized product recommendations, secure payment gateways, order tracking, and customer reviews. Additionally, the app integrates exclusive deals, flash sales, and a loyalty rewards program to enhance user engagement."
   ghLink="https://github.com/Densingh-123/Flipkart_Application.git"
   demoLink="https://flipkart-application.vercel.app/"
-/>
+/> */}
 
-          </Col>
+          {/* </Col>
           <Col md={4} className="project-card">
           <ProjectCard
   imgPath='/9.png'
@@ -115,7 +115,26 @@ imgPath='/2.png'
   ghLink="https://github.com/Densingh-123/Densingh-Portfolio.git"
   demoLink="https://densingh-portfolio-55u8.vercel.app/"
 />
-
+</Col> */}
+          <Col md={4} className="project-card">
+          <ProjectCard
+  imgPath='/11.png'
+  isBlog={false}
+  title="Skatie"
+  description="A skating app that brings your passion to life! Design and edit your skateboards with customizable graphics, colors, and patterns to reflect your unique style. Explore a seamless shopping experience where you can buy the latest skateboards and accessories directly from the app. The app boasts a beautiful and interactive UI, with smooth GSAP animations that bring every interaction to life—think boards flipping, vibrant hover effects, and transitions that mimic the fluidity of skating itself. Whether you're designing your dream board or shopping for gear, this app ensures a dynamic and visually stunning experience for skaters of all levels."
+  ghLink="https://github.com/Densingh-123/Skatting_Application"
+  demoLink="https://skatting-application.vercel.app/"
+/>
+</Col>
+          <Col md={4} className="project-card">
+          <ProjectCard
+  imgPath='/10.png'
+  isBlog={false}
+  title="Juice Application"
+  description="Quench your thirst with our vibrant Juice Application! The landing page welcomes you with a beautifully designed UI, bursting with fresh colors and a sleek, modern layout that captures the essence of natural flavors. Experience smooth animations powered by GSAP, with fruit-inspired transitions, playful hover effects, and eye-catching scrolling motions that make navigating the app a delight. From showcasing exotic juice blends to highlighting health benefits, every element flows seamlessly to create an engaging and refreshing user experience. Dive in and explore the world of juices like never before!"
+  ghLink="https://github.com/Densingh-123/Juice_Appliaction"
+  demoLink="https://juice-appliaction.vercel.app/"
+/>
 
           </Col> 
         </Row>
